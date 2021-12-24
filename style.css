@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color: rgb(226, 236, 255);
+}
+nav{
+    background-color: rgb(11, 0, 77);
+    color: white;
+    height: 2em;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box:hover{
+    background-color: cornflowerblue;
+}
+
+.gameInfo{
+    text-align: center;
+    padding: 1vw 10vw;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 3em;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width is ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1em;
+    margin: 0 23px;
+    padding: 10px 30px ;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: rgb(11, 0, 77);
+    color: cornsilk;
+}
+
+.welcome{
+    text-align: center;
+    padding: 1vw 0vw;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 2em;
+}
+@media only screen and (max-width: 768px) {
+    .gameInfo{
+        display: block;
+    }
+  }
+
+/**updated css**/
+nav ul {
+    display: inline-flex;
+}
+
+a{
+    text-align-last: right;
+    color: rgb(11, 0, 77);
+    text-decoration: none;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: bold;
+    font-size: 1em;
+    background: whitesmoke ;
+    margin-left: 31em;
+    padding: 0.15em;
+    border-radius: 1em;
+}
